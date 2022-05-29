@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/giovanni.t.finotello/AndroidStudioProjects/ReposApp/app/src/main/res/drawable-v24/ic_branch_yellow.xml" value="0.1535" />
+        <entry key="..\:/Users/giovanni.t.finotello/AndroidStudioProjects/ReposApp/app/src/main/res/drawable-v24/ic_star_yellow.xml" value="0.1535" />
         <entry key="..\:/Users/giovanni.t.finotello/AndroidStudioProjects/ReposApp/app/src/main/res/layout/activity_main.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/giovanni.t.finotello/AndroidStudioProjects/ReposApp/app/src/main/res/layout/fragment_repos_adapter.xml" value="0.2520833333333333" />
       </map>
     </option>
   </component>

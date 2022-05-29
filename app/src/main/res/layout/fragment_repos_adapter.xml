@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginHorizontal="@dimen/dimen_16_dp"
+             android:layout_marginVertical="@dimen/dimen_8_dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_6_dp">
+
+        <TextView
+            android:id="@+id/txtNameRepo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_color"
+            android:textSize="@dimen/dimen_18_sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imgUser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@sample/repository.json/items/name" />
+
+        <TextView
+            android:id="@+id/txtDescriptionRepo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            app:layout_constraintEnd_toStartOf="@+id/imgUser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNameRepo"
+            tools:text="@sample/repository.json/items/description" />
+
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="@dimen/dimen_73_dp"
+            android:layout_height="@dimen/dimen_58_dp"
+            android:contentDescription="@string/imagem_usuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:id="@+id/txtLoginRepo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/blue_color"
+            android:layout_marginTop="@dimen/dimen_8_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imgUser"
+            app:layout_constraintTop_toBottomOf="@+id/imgUser"
+            tools:text="@sample/repository.json/items/owner/login" />
+
+        <TextView
+            android:id="@+id/txtFullUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_10_sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txtStars"
+            app:layout_constraintTop_toBottomOf="@+id/txtLoginRepo"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="@sample/repository.json/items/full_name" />
+
+        <TextView
+            android:id="@+id/txtForks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow_color"
+            android:textSize="@dimen/dimen_16_sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_branch_yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txtDescriptionRepo"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescriptionRepo"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="@sample/repository.json/items/forks_count" />
+
+        <TextView
+            android:id="@+id/txtStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/yellow_color"
+            android:textSize="@dimen/dimen_16_sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_star_yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtForks"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescriptionRepo"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="@sample/repository.json/items/stargazers_count" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
