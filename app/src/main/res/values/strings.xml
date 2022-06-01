@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ReposApp</string>
+    <string name="imagem_usuario">Imagem do Usuário do Repositório</string>
 </resources>
